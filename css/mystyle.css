@@ -633,13 +633,13 @@ h2.background:after{
     font-size:60px;
 }
 #awards .awards-nested h3{
-    font-size:20px;
+    font-size:22px;
 }
 #awards .awards-nested p{
     margin:0;
     padding:4px 0 0 4px;
     font-size:15px;
-    line-height:25px;
+    line-height:20px;
 }
 /* ====================
    End Awards 
