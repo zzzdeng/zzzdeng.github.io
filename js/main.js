@@ -194,5 +194,47 @@
 		loaderPage();
 	});
 
+	// Papers section
+	$('.active-paper-carusel').owlCarousel({
+		items:3,
+        loop:true,
+        autoplay:true,
+        nav:true,
+        navText: ["<span class='lnr lnr-arrow-left'></span>","<span class='lnr lnr-arrow-right'></span>"],
+        responsive:{    
+        	0:{
+          		items: 1
+        	},
+        	600:{
+          		items: 2
+        	},
+        	1000:{
+          		items: 3
+        	}
+   		}
+    });
 
+	// Awards slide
+	$('.awards-slide').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		responsive: [{
+			breakpoint: 900,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1
+			}
+		}]
+	});
 }());
+

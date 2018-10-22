@@ -9,6 +9,7 @@
 [6] skills
 [7] Awards
 [8] Portfolio
+Papers
 [9] Happy (statistics)
 [10] News
 [11] Contact
@@ -624,7 +625,7 @@ h2.background:after{
     background-color:#ffffff;
 }
 #awards h2.background:after{
-    content: 'Awards';
+    content: 'awards';
 }
 #awards .awards-nested{
     padding:10px 0;
@@ -633,7 +634,8 @@ h2.background:after{
     font-size:60px;
 }
 #awards .awards-nested h3{
-    font-size:22px;
+    font-size:17px;
+    font-weight:700;
 }
 #awards .awards-nested p{
     margin:0;
@@ -641,6 +643,8 @@ h2.background:after{
     font-size:15px;
     line-height:20px;
 }
+
+
 /* ====================
    End Awards 
 ==================== */
@@ -726,6 +730,128 @@ h2.background:after{
 /* ====================
    End Portfolio 
 ==================== */
+
+/* ====================
+  [9] Papers
+==================== */
+.papers .heading-left{
+    text-align:left;
+}
+.papers h2{
+    display:inline-block;
+}
+.papers h2.background:after{
+    content: 'latest';
+}
+.single-paper {
+  padding:15px
+}
+.single-paper img {
+  -webkit-transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  transition:all 0.3s ease 0s
+}
+.single-paper img:hover {
+  transform:scale(1.1)
+}
+.single-paper .type {
+  background-color:#000;
+  color:#fff;
+  font-weight:100;
+  padding:2px 15px;
+  width:115px;
+  text-align:center;
+  margin-top:20px
+}
+.single-paper a {
+  color:#222
+}
+.single-paper h3{
+  font-size:15px;
+  font-weight:700;
+}
+.single-paper h4{
+  font-size:13px;
+}
+.single-paper h5{
+  font-size:12px;
+}
+.papers .carousel-trigger {
+  position:absolute;
+  transform:translateY(-50%);
+  right:80px;margin-top:10%
+}
+@media (max-width: 1199px) {
+  .papers .carousel-trigger {
+    right:110%;
+    transform:translate(0, -50%)
+  }
+}
+.papers .carousel-trigger .next-trigger {
+  margin-bottom:10px
+}
+.papers .carousel-trigger .next-trigger,
+.papers .carousel-trigger .prev-trigger {
+  width:40px;
+  background:#fff;
+  border:1px solid #eee;
+  text-align:center;
+  -webkit-transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  transition:all 0.3s ease 0s;
+  cursor:pointer
+}
+.papers .carousel-trigger .next-trigger span,
+.papers .carousel-trigger .prev-trigger span {
+  line-height:40px;
+  -webkit-transition:all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s;
+  -o-transition:all 0.3s ease 0s;
+  transition:all 0.3s ease 0s;
+  font-weight:600
+}
+.papers .carousel-trigger .next-trigger:hover,
+.papers .carousel-trigger .prev-trigger:hover {
+  background:#69B4FD;
+  border:1px solid #69B4FD
+}
+.papers .carousel-trigger .next-trigger:hover span,
+.papers .carousel-trigger .prev-trigger:hover span {
+  color:#fff
+}
+.papers .owl-controls {
+  position:absolute;
+  left:102%;
+  top:25%
+}
+@media (max-width: 1024px) {
+  .papers .owl-controls {
+    position:relative;
+    text-align:center;
+    left:0;top:20px
+  }
+  .papers .owl-controls .owl-prev,
+  .papers .owl-controls .owl-next {
+    display:inline-block
+  }
+}
+.papers .lnr-arrow-left,
+.papers .lnr-arrow-right {
+  background-color:#fff;
+  box-shadow:-14.142px 14.142px 20px 0px rgba(157,157,157,0.2);
+  padding:14px;
+  color:#000;
+  font-weight:500;
+  border:1px solid #f5f5f5;
+  display:inline-flex
+}
+
+/* ====================
+  [9] End Papers
+==================== */
+
 /* ====================
   [9] Happy (statistics)
 ==================== */
@@ -787,7 +913,7 @@ h2.background:after{
     display:inline-block;
 }
 #news h2.background:after{
-  content: 'latest';
+  content: 'recent';
 }
 #news .carousel-indicators {
   width: 100%;
@@ -880,6 +1006,12 @@ h2.background:after{
  width:100%;
  padding-bottom:0;
  background-color:#ffffff;
+}
+#contact-me .heading-right{
+    text-align:right;
+}
+#contact-me h2{
+    display:inline-block;
 }
 #contact-me h2.background:after {
   content: 'what\0027s up';
