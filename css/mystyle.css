@@ -747,6 +747,7 @@ h2.background:after{
   padding:15px
 }
 .single-paper img {
+  border-radius: 8px;
   -webkit-transition:all 0.3s ease 0s;
   -moz-transition:all 0.3s ease 0s;
   -o-transition:all 0.3s ease 0s;
@@ -857,7 +858,7 @@ h2.background:after{
 .single-talk p{font-size:13px;}
 .single-talk h5{font-size:12px;}
 .single-talk a{color:#222}
-.single-talk img{-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}
+.single-talk img{-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;border-radius: 8px;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}
 .single-talk img:hover{transform:scale(1.1)}
 .single-talk .dates{background:#222;color:#fff;padding:18px 24px;position:absolute}
 .single-talk .dates span{font-size:20px;font-weight:600}
@@ -993,6 +994,7 @@ h2.background:after{
   width: 400px;
   height: auto;
   display: inline-block;
+  border-radius: 8px;
   margin-bottom: 30px;
 }
 #news .text-image h3 {
