@@ -625,7 +625,7 @@ h2.background:after{
     background-color:#ffffff;
 }
 #awards h2.background:after{
-    content: 'awards';
+    content: 'selected';
 }
 #awards .awards-nested{
     padding:10px 0;
@@ -930,7 +930,7 @@ h2.background:after{
     display:inline-block;
 }
 #news h2.background:after{
-  content: 'recent';
+  content: 'good';
 }
 #news .carousel-indicators {
   width: 100%;
