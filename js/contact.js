@@ -41,7 +41,13 @@
 			type: "POST",
 			url: $('#ajax-form').attr('action'),
 			data: form_data,
+			dataType: "json",
+			headers: { Accept: "application/json" }, // Formspree replies with JSON instead of a redirect
 			timeout: 6000,
+			error: function() {
+			    // Fall back to a normal form submission so the message isn't lost
+			    $('#ajax-form').off('submit')[0].submit();
+			},
 			success: function() {
 			    $('#ajax-form').slideUp('slow');
 			    $('.success').slideDown('slow');
