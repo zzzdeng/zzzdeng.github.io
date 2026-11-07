@@ -597,6 +597,12 @@ h2.background:after{
     font-weight:800;
     color:#ff0000;
 }
+#about-me .cv-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 /* ====================
    End about
 ==================== */
